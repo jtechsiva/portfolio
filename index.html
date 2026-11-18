@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sivaguru Mariappan</title>
+  <style>
+    :root {
+      --bg: #f7f5f2;
+      --text: #1d1d1f;
+      --muted: #6b6b70;
+      --accent: #2f6f5e;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #161618;
+        --text: #f2f2f4;
+        --muted: #a1a1a8;
+        --accent: #6fc2a8;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; }
+    body {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px 16px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      text-align: center;
+    }
+    h1 {
+      font-size: clamp(2.5rem, 8vw, 4.5rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    p {
+      margin-top: 0.75rem;
+      font-size: clamp(1.1rem, 3vw, 1.5rem);
+      color: var(--muted);
+    }
+    p strong { color: var(--accent); font-weight: 600; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Hello, world</h1>
+    <p>I'm <strong>Sivaguru Mariappan</strong>.</p>
+  </main>
+</body>
+</html>
